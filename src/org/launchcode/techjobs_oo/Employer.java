@@ -4,17 +4,17 @@ import java.util.Objects;
 
 public class Employer {
     private int id;
-    private static int nextId = 1;
+    private static int nextId = 1;  //declares var nextId & static means it's changing values not stored within Employer
     private String value;
 
-    public Employer() {
-        id = nextId;
-        nextId++;
+    public Employer() { //constructor accepts no arguments
+        id = nextId; //and assigns the value of nextId to the id field.
+        nextId++; //incrementing for each new Employer object created. assigning unique id number
     }
 
-    public Employer(String value) {
-        this();
-        this.value = value;
+    public Employer(String value) { //constructor taking in a string value
+        this(); //calling the first constructor
+        this.value = value; //makes initializing id a default behavior
     }
 
     // Custom toString, equals, and hashCode methods:
