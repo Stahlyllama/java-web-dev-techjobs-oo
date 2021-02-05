@@ -16,9 +16,9 @@ public class Location {
         id = nextId;
         nextId++;
     }
-    public Location(String aValue) { //constructor taking in a string value
+    public Location(String value) { //constructor taking in a string value
         this(); //calling the first constructor
-        this.value = aValue; //makes initializing id a default behavior
+        this.value = value; //makes initializing id a default behavior
     }
     // Custom toString, equals, and hashCode methods:
 
