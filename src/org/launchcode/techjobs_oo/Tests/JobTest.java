@@ -36,6 +36,9 @@ public class JobTest {
 
     @Test
     public void testJobsForEquality(){
+        Job job1 = new Job();
+        Job job2 = new Job();
+        assertEquals(job1, job2);
         System.out.println("Thus we can skip the test for this condition.");
     }
 
