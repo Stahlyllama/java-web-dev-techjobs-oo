@@ -31,9 +31,11 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
     @Override
-    public String toString() {
-        return value;
+    public String toString(){
+        return "ID: " + id + "\n" + "Name: " + name + "\n" + "Employer: " + "\n" + "Location: " + location + "\n";
     }
+
+
 
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
@@ -44,7 +46,12 @@ public class Job {
         if (this == o) return true;
         if (!(o instanceof Job)) return false;
         Job job = (Job) o;
-        return id == job.id && Objects.equals(value, job.value) && Objects.equals(name, job.name) && Objects.equals(employer, job.employer) && Objects.equals(location, job.location) && Objects.equals(positionType, job.positionType) && Objects.equals(coreCompetency, job.coreCompetency);
+        if (job.getName().equals(this.name)&&(job.getLocation().equals(this.location))) {
+            return true;
+        } else {
+            return false;
+
+        }
     }
 
     @Override
