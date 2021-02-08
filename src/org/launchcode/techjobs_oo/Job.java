@@ -32,7 +32,12 @@ public class Job {
     }
     @Override
     public String toString(){
-        return "ID: " + id + "\n" + "Name: " + name + "\n" + "Employer: " + "\n" + "Location: " + location + "\n";
+        return "ID:______ " + id + "______\n"
+                + "Name:______ " + name + "______\n"
+                + "Employer:______ " + employer + "______\n"
+                + "Location: ______ " + location + "______ \n"
+                + "Position Type:______  " + positionType + "______ \n"
+                + "Core Competency: ______ " + coreCompetency + "______ ";
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields

@@ -17,6 +17,7 @@ public class JobTest {
     Job test_job1 = new Job();
     Job test_job2 = new Job();
     Job test_job3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+    Job test_job4 = new Job( );
 
     @Before
     public void beforeTests() {
