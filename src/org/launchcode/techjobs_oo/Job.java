@@ -35,9 +35,6 @@ public class Job {
         return "ID: " + id + "\n" + "Name: " + name + "\n" + "Employer: " + "\n" + "Location: " + location + "\n";
     }
 
-
-
-
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
@@ -46,7 +43,8 @@ public class Job {
         if (this == o) return true;
         if (!(o instanceof Job)) return false;
         Job job = (Job) o;
-        if (job.getName().equals(this.name)&&(job.getLocation().equals(this.location))) {
+        if (job.getName().equals(this.name) && (job.getLocation().equals(this.location)) && (job.getEmployer().equals(this.employer) && (job.getPositionType().equals(this.positionType)) &&(job.coreCompetency.equals(this.coreCompetency))))
+        {
             return true;
         } else {
             return false;
