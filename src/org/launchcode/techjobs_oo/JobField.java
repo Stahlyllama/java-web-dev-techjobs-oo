@@ -18,9 +18,13 @@ public JobField(String value) { //constructor taking in a string value
     }
 
     @Override
-public String toString(){
-        return value;
-        }
+public String toString() {
+            if (value == null || value.equals("")) {
+                    return "no data";
+            } else {
+                    return value;
+            }
+    }
 
 @Override
 public boolean equals(Object o){  // Two objects are equal if they have the same id.
