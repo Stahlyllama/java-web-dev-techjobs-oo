@@ -2,14 +2,14 @@ package org.launchcode.techjobs_oo;
 
 import java.util.Objects;
 
-public class CoreCompetency {
+public class CoreCompetency extends JobField{
     private int id;
     private static int nextId = 1;//declares variable & static = changing value isn't stored in object
     private String value;
 
     public CoreCompetency (String value){
         super(value);
-    }
+           }
 
     //
 //    public CoreCompetency() {  //first constructor no args
@@ -47,6 +47,6 @@ public class CoreCompetency {
 //
 //    public  int getId() { return id; }
 //
-//    public String getValue() { return value; }
+    public String getValue() { return value; }
     public void setValue(String aValue) { this.value = aValue; }
 }

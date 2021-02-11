@@ -31,6 +31,10 @@ public class Job extends JobField{
         this.coreCompetency = coreCompetency;
     }
 
+    public Job() {
+
+    }
+
     public String toString(){
         return "ID: " + getId() + "\n"
                 + "Name: " + name + "\n"

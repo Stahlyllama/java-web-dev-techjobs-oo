@@ -7,13 +7,14 @@ private int id;
 private static int nextId=1;  //declares var nextId & static means it's changing values not stored within Employer
 private String value;
 
-public JobField(String value){ //constructor accepts no arguments
+
+public JobField(){ //constructor accepts no arguments
         id=nextId; //and assigns the value of nextId to the id field.
         nextId++; //incrementing for each new Employer object created. assigning unique id number
         }
-
-    public JobField() {
-        
+public JobField(String value) { //constructor taking in a string value
+        //calling the first constructor
+        this.value = value; //makes initializing id a default behavior
     }
 
     @Override
